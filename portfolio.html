@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>切版任務作業二 | Mika</title>
+    <!-- 切版任務作業一 - 個人品牌網站 - 做其中一頁的 RWD 網頁頁面 -->
+    <!-- 引入字體:Noto Sans  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+        
+    </style>
+    <link rel="stylesheet" href="/public/assets/css/reset.css">
+    <link rel="stylesheet" href="../layout-task-2/assets/css/portfolio.css">
+
+</head>
+
+<body>
+    <!-- 表頭 -->
+
+    <div class="container">
+        <a href="#" class="logo-link"><img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg"
+                alt="logo">
+        </a>
+
+        <div class="header-link">
+            <ul class="nav-link">
+                <li><a href="#">首頁
+                        <span class="corner nav-upper-left"></span>
+                        <span class="corner nav-upper-right"></span>
+                        <span class="corner nav-lower-left"></span>
+                        <span class="corner nav-lower-right"></span>
+                    </a></li>
+                <li><a href="#">作品集
+                        <span class="corner nav-upper-left"></span>
+                        <span class="corner nav-upper-right"></span>
+                        <span class="corner nav-lower-left"></span>
+                        <span class="corner nav-lower-right"></span>
+                    </a></li>
+                <li><a href="#">服務項目
+                        <span class="corner nav-upper-left"></span>
+                        <span class="corner nav-upper-right"></span>
+                        <span class="corner nav-lower-left"></span>
+                        <span class="corner nav-lower-right"></span>
+                    </a></li>
+                <li><a href="#">部落格
+                        <span class="corner nav-upper-left"></span>
+                        <span class="corner nav-upper-right"></span>
+                        <span class="corner nav-lower-left"></span>
+                        <span class="corner nav-lower-right"></span>
+                    </a></li>
+                <li><a href="#">聯絡我
+                        <span class="corner nav-upper-left"></span>
+                        <span class="corner nav-upper-right"></span>
+                        <span class="corner nav-lower-left"></span>
+                        <span class="corner nav-lower-right"></span>
+                    </a></li>
+            </ul>
+        </div>
+
+        <!-- 漢堡選單 -->
+        <input type="checkbox" id="ham-munu">
+        <label for="ham-munu" class="ham-icon">
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+        </label>
+
+        <div class="menu-list nav-link">
+            <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">作品集</a></li>
+            <li><a href="#">服務項目</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">聯絡我</a></li>
+            </ul>
+          </div>
+
+    </div>
+
+    <!-- 橫幅 -->
+    <div class="banner-wrap">
+        <div class="banner-title">
+            <h1>讓使用者在觀賞與使用的旅程中，發現
+                <span class="focus-bg">設計的價值</span>
+                <br>
+                而我在設計與開發的過程中，看見<span class="focus-bg">自己的價值</span>
+            </h1>
+            
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true"
+                class="quote-left" alt="">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true"
+                class="quote-right" alt="">
+            
+        </div>
+        <div class="banner-content">
+            <ul>
+                <li>2B經驗</li>
+                <li></li>
+                <li>內部監控系統、庫存系統、採購系統、行銷整合系統</li>
+            </ul>
+            <ul>
+                <li>2C經驗</li>
+                <li></li>
+                <li>跨國美妝保養電商、個人品牌網站、醫美網站、電子商務</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 作品集 -->
+
+        <ul class="works-wrap container">
+            <!-- 作品1 -->
+            <li class="works-item">
+                <div class="works-img">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image1.png?raw=true"
+                        alt="星際旅行訂票平台">
+                </div>
+                <div class="works-content">
+                    <h2>星際旅行訂票平台</h2>
+                    <p>悠遊宇宙的夢想，從這裡開始實現</p>
+                    <ul class="tools-tag">
+                        <li>網頁設計</li>
+                        <li>響應式設計</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </li>
+            <!-- 作品2 -->
+            <li class="works-item">
+                <div class="works-img">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image2.png?raw=true"
+                        alt="理財App">
+                </div>
+                <div class="works-content">
+                    <h2>理財App</h2>
+                    <p>連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+                    <ul class="tools-tag">
+                        <li>APP設計</li>
+                        <li>iOS</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+
+            </li>
+            <!-- 作品3 -->
+            <li class="works-item">
+                <div class="works-img">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image3.png?raw=true"
+                        alt="醫美診所官網">
+                </div>
+                <div class="works-content">
+                    <h2>醫美診所官網</h2>
+                    <p>永保青春的秘密，從粹究開始</p>
+                    <ul class="tools-tag">
+                        <li>網頁設計</li>
+                        <li>響應式設計</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+
+            </li>
+            <!-- 作品4 -->
+            <li class="works-item">
+                <div class="works-img">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image4.png?raw=true"
+                        alt="美美美早餐店 POS 機 UI Design">
+                </div>
+                <div class="works-content">
+                    <h2>美美美早餐店 POS 機 UI Design</h2>
+                    <p>訂單送單一目瞭然，自動報表分析好輕鬆</p>
+                    <ul class="tools-tag">
+                        <li>UI 設計</li>
+                        <li>前端開發</li>
+                        <li>Wix</li>
+                    </ul>
+                </div>
+
+            </li>
+            <!-- 作品5 -->
+            <li class="works-item">
+                <div class="works-img">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image5.png?raw=true"
+                        alt="電影院訂票系統">
+                </div>
+                <div class="works-content">
+                    <h2>電影院訂票系統</h2>
+                    <p>三步驟完成訂票，電腦手機都支援</p>
+                    <ul class="tools-tag">
+                        <li>前端開發</li>
+                        <li>後端支援</li>
+                        <li>Vue</li>
+                    </ul>
+                </div>
+
+            </li>
+            <!-- 作品6 -->
+            <li class="works-item">
+                <div class="works-img">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image6.png?raw=true"
+                        alt="巧克巧克形象官網設計">
+                </div>
+                <div class="works-content">
+                    <h2>巧克巧克形象官網設計</h2>
+                    <p>三步驟完成訂票，電腦手機都支援</p>
+                    <ul class="tools-tag">
+                        <li>UI設計</li>
+                        <li>設計系統</li>
+                        <li>網路電商</li>
+                    </ul>
+                </div>
+
+            </li>
+        </ul>
+
+    <ul class="works-page-link">
+        <li><a href="page1" class="current">1</a></li>
+        <li><a href="page2">2</a></li>
+        <li><a href="page3">3</a></li>
+    </ul>
+
+    <!-- 表尾 -->
+
+    <div class="footer">
+        <div class="container footer-flex">
+            <div class="footer-content">
+                <a href="#" class="logo-link-ft"><img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg"
+                        alt="logo">
+                </a>
+                <p class="content-message">若有數位產品設計和開發相關問題<br>
+                    歡迎填寫表單，或直接與我聯絡！
+                </p>
+                <p class="content-email">service@hexschool.com</p>
+            </div>
+            <div class="footer-link">
+                <a href="" class="current"> <img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/list.svg"
+                        alt="list.svg">填寫表單</a>
+
+                <a href=""> <img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/instagram.svg"
+                        alt="instagram.svg">hexschool_demo</a>
+
+                <a href=""> <img
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/facebook.svg"
+                        alt="facebook.svg">hexschoolTW</a>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
