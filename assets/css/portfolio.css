@@ -12,22 +12,40 @@ body {
     font-family: "Noto Sans TC", sans-serif;
 }
 
+.container {
+    width: 1296px;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+}
+
 /*表頭*/
+
+header {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+}
+
+nav {
+    max-width: 1296px;
+    margin: auto;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #F1F1F1;
+}
+
 .header-link {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    border-bottom: 1px solid #F1F1F1;
-}
-
-
-.logo-link {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .logo-link img,
@@ -38,8 +56,8 @@ body {
 .nav-link {
     display: flex;
     gap: 40px;
-    margin: 32px auto;
     flex-wrap: wrap;
+
 }
 
 .nav-link a {
@@ -188,13 +206,6 @@ body {
 
 
 /*作品集*/
-.container {
-    width: 1296px;
-    max-width: 100%;
-    margin: auto;
-    position: relative;
-}
-
 .works-wrap {
     max-width: 100%;
     margin: auto;
@@ -351,29 +362,19 @@ body {
 
 /* RWD */
 
-input,
-label {
-    display: none;
-    opacity: 0;
-}
-
-
 .ham-icon {
     width: 40px;
     height: 40px;
     background-color: #FFF;
     padding: 5px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: #fff;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 6px;
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 
 .ham-bar {
@@ -383,25 +384,49 @@ label {
 }
 
 .menu-list {
-    text-align: center;
-    background-color: #ccc;
-    display: none;
-    width: 100%;
     position: absolute;
-    top: 30px;
-    
+    width: 100%;
+    top: 66px;
+    z-index: 20;
+    background-color: #ccc;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.3);
+    right: 0;
+    opacity: 0;
+    display: none;
+}
+
+.menu-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-list li {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ccc;
 }
 
 .menu-list a {
-    border-top: 1px solid #fff;
+    text-decoration: none;
+    color: #000000;
+    line-height: 1.5;
+    display: block;
+    padding: 10px;
 }
 
 .menu-list a:hover {
     background-color: #1a1a1a;
     color: #fff;
-    border-top: none;
 }
 
+/*開合*/
+.menu-show .menu-list {
+    opacity: 1;
+    display: block;
+}
 
 /*平板 手機模式*/
 
@@ -439,10 +464,6 @@ label {
         opacity: 0;
     }
 
-    /* .banner-wrap {
-        margin: 80px auto 80px auto;
-    } */
-
     .banner-title {
         max-width: 300px;
         height: 192px;
@@ -462,26 +483,28 @@ label {
     }
 
     /*漢堡*/
-    label {
-        display: block;
-        opacity: 1;
-    }
 
-    .header-link ul li {
+    /*移除導覽列*/
+    .header-link .nav-link {
         display: none;
         opacity: 0;
     }
 
-    /*開合*/
-    #ham-munu:checked~.menu-list {
-        max-height: 100vh;
-        display: block;
-        z-index: 20;
-
+    /*出現漢堡*/
+    .ham-icon {
+        display: flex;
     }
 
-
+    .header-link {
+        justify-content: flex-end;
+    }
 
 }
 
-
+    /*開啟漢堡選單後 拉開螢幕再藏起來*/
+@media(min-width:768px) {
+    .menu-list ul {
+        opacity: 0;
+        display: none;
+    }
+}
